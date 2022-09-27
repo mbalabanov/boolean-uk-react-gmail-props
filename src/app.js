@@ -14,12 +14,6 @@ function App() {
   const [hideRead, setHideRead] = useState(false);
   const [currentTab, setCurrentTab] = useState("inbox");
 
-  //  const unreadEmails = emails.filter((email) => !email.read);
-  //  const starredEmails = emails.filter((email) => email.starred);
-
-  // const getUnReadEmails = (emails) => emails.filter((email) => !email.read);
-  const getStarredEmails = (emails) => emails.filter((email) => email.starred);
-
   const toggleStar = (targetEmail) => {
     const updatedEmails = (emails) =>
       emails.map((email) =>
